@@ -1,0 +1,93 @@
+.global-header {
+  @extend %clearfix;
+
+  margin: 15px 0 28px 0;
+
+  .logo {
+    float: left;
+  }
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.nav-list {
+  @extend %clearfix;
+}
+.nav-item {
+  float: left;
+
+  a {
+    @extend .no-decoration;
+  }
+}
+
+.main-img {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+
+.search-account {
+  float: right;
+  width: 260px;
+}
+.account-links {
+  .nav-item {
+    padding: 0 10px;
+
+    &:first-child {
+      padding-left: 0;
+      background: none;
+    }
+    &.last {
+      padding-right: 0;
+    }
+  }
+  .account-link {
+    @include font-size(12);
+    color: $font-light;
+  }
+}
+
+
+.page-nav {
+  width: 1000px;
+
+  .nav-item {
+    position: relative;
+    top: 4px;
+    padding: 15px 37px;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    @include background(linear-gradient(#fff, #bdbdbd));
+
+    &:hover {
+      background: #bec0c3;
+      cursor: pointer;
+    }
+    &.active {
+      top: 0;
+      padding-top: 19px;
+      border: 1px solid #c2c2c2;
+      border-bottom: 1px solid #fff;
+      background: #fff;
+
+      .page-nav-link {
+        opacity: 1;
+      }
+    }
+  }
+  .page-nav-link {
+    @include font-size(12);
+    letter-spacing: 0.07em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $font-dark;
+    opacity: .8;
+  }
+}

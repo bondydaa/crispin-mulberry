@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- base css -->
-  <link href="" rel="stylesheet">
-  <!-- page specific css -->
-  <link href="" rel="stylesheet">
+  <link href="/css/crispin-mulberry.css" rel="stylesheet">
 
   <!-- IE helper css -->
   <!--[if lt IE 9]>
@@ -17,41 +15,231 @@
   <![endif]-->
 
 </head>
-<body class="backdrop">
+<body class="backdrop news-features">
   <div class="container">
-    <div class="header">
-    </div><!-- END: .header -->
+    <div class="global-header">
+      <div class="logo">
+        <img src="/images/header-logo.png" class="logo-image">
+      </div>
+      <div class="search-account">
+        <form action="#!FIXME" method="GET" classs="search-form">
+          <label for="global-search" class="sr-only">Search</label>
+          <input type="text" class="search-box" id="global-search" name="global-search" placeholder="Search">
+        </form>
 
-    <div class="main-content">
-      <div class="nav">
-      </div><!-- END: .nav -->
+        <div class="account-links">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#!IFIXME" class="account-link">My Account</a></li>
+            <li class="nav-item"><a href="#!IFIXME" class="account-link">My Subscriptions</a></li>
+            <li class="nav-item last"><a href="#!IFIXME" class="account-link">My Articles</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- END: .global-header -->
 
-      <div class="section">
-        <div class="module">
-        </div><!-- END: .module -->
+    <!-- <div class="main-content"> -->
+    <div class="page-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Destinations</a></li>
+        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Getaways</a></li>
+        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Travel Tips</a></li>
+        <li class="nav-item active"><a href="#!IFIXME" class="page-nav-link">News &amp; Features</a></li>
+        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Contents</a></li>
+        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Contact Us</a></li>
+      </ul>
+    </div><!-- END: .nav -->
 
-        <div class="sidebar">
-        </div><!-- END: .sidebar -->
-      </div><!-- END: .section -->
+    <div class="section">
+      <div class="main span-7">
+        <div class="marquee">
+          <div class="marquee-main-img">
+            <img src="/images/slide-uss-torsk.jpg" class="main-img active" title="USS Torsk at Baltimore's Martime Museum">
+            <img src="/images/slide-venetian.jpg" class="main-img" title="Enjoy the best gondola ride on this side of the Atlantic Ocean">
+            <img src="/images/slide-london.jpg" class="main-img" title="Enjoy the pubs along the river Thames & get spectacular view from the London Eye">
+            <img src="/images/slide-mount-rushmore.jpg" class="main-img" title="Marvel at the majestic beauty of the Black Hills and come face to face with American history">
+            <div class="marquee caption">
+              <h1 class="marquee-headline">Downtown Baltimore</h1>
+              <p class="marquee-details">Check out the USS Torsk at Baltimore's historic Maritime Museum.</p>
+            </div>
+          </div>
+          <div class="marquee-thumbnails">
+            <div class="thumbnail"><img src="/images/thumb-uss-torsk.jpg" class="marquee-thumb"></div>
+            <div class="thumbnail"><img src="/images/thumb-venetian.jpg" class="marquee-thumb"></div>
+            <div class="thumbnail"><img src="/images/thumb-london.jpg" class="marquee-thumb"></div>
+            <div class="thumbnail"><img src="/images/thumb-mount-rushmore.jpg" class="marquee-thumb"></div>
+          </div>
+        </div><!-- END: .marquee -->
+      </div>
 
-      <div class="section">
-        <div class="module">
-        </div><!-- END: .module -->
+      <div class="sidebar span-3 last">
+        <div class="advertisement">
+          <img src="/images/ad-holiday-inn.jpg" class="ad-placeholder">
+        </div><!-- END: .advertisement -->
 
-        <div class="module">
-        </div><!-- END: .module -->
+        <div class="advertisement">
+          <img src="/images/ad-guardians.jpg" class="ad-placeholder">
+        </div><!-- END: .advertisement -->
+      </div><!-- END: .sidebar -->
+    </div><!-- END: .section -->
 
-        <div class="module">
-        </div><!-- END: .module -->
+    <div class="section">
+      <div class="main span-7">
+        <div class="categories span-2">
+          <h3 class="header">Browse Categories</h3>
+          <dl class="category-list">
+            <dt class="category-header">Popular Destinations</dt>
+            <dd class="category destination"><a href="#!FIXME">United States</a></dd>
+            <dd class="category destination"><a href="#!FIXME">Europe</a></dd>
+            <dd class="category destination"><a href="#!FIXME">Latin America</a></dd>
+            <dd class="category destination"><a href="#!FIXME">South Pacific</a></dd>
+            <dd class="category destination"><a href="#!FIXME">Caribbean</a></dd>
+            <dd class="category destination"><a href="#!FIXME">Australia</a></dd>
+            <dd class="category destination"><a href="#!FIXME">All Destinations</a></dd>
+            <dt class="category-header">Getaways</dt>
+            <dd class="category getaway"><a href="#!FIXME">Adventure Vacations</a></dd>
+            <dd class="category getaway"><a href="#!FIXME">Beach Vacations</a></dd>
+            <dd class="category getaway"><a href="#!FIXME">Cruise Vacations</a></dd>
+            <dd class="category getaway"><a href="#!FIXME">Culinary Vacations</a></dd>
+            <dd class="category getaway"><a href="#!FIXME">Family Vacations</a></dd>
+            <dd class="category getaway"><a href="#!FIXME">Luxury Vacations</a></dd>
+            <dd class="category getaway"><a href="#!FIXME">Romantic Vacations</a></dd>
+            <dd class="category getaway"><a href="#!FIXME">Ski Vacations</a></dd>
+            <dd class="category getaway"><a href="#!FIXME">All Vacations</a></dd>
+          </dl>
+        </div><!-- END: .categories -->
 
-        <div class="sidebar">
-        </div><!-- END: .sidebar -->
-      </div><!-- END: .section -->
+        <div class="recent-articles span-5">
+          <h3 class="header">Recent Articles</h3>
+          <div class="post">
+            <img src="http://placekitten.com/g/140/105" class="post-thumbnail">
+            <h4 class="post-header"></h4>
+            <p class="post-details"></p>
+          </div><!-- END: .post -->
 
-      <div class="footer">
-      </div><!-- END: .footer -->
+          <div class="post">
+            <img src="http://placekitten.com/g/140/105" class="post-thumbnail">
+            <h4 class="post-header"></h4>
+            <p class="post-details"></p>
+          </div><!-- END: .post -->
 
-    </div><!-- END: .main-content -->
+          <div class="post">
+            <img src="http://placekitten.com/g/140/105" class="post-thumbnail">
+            <h4 class="post-header"></h4>
+            <p class="post-details"></p>
+          </div><!-- END: .post -->
+        </div><!-- END: .recent-articles -->
+
+        <div class="popular-vids span-7">
+          <h3 class="header">Popular Videos</h3>
+          <div class="video">
+            <img src="/images/video-team-mongoose.jpg" class="" title="">
+            <div class="caption">
+              <h4 class=""></h4>
+            </div>
+          </div><!-- END: .video -->
+
+          <div class="video">
+            <img src="/images/video-st-pauls.jpg" class="" title="">
+            <div class="caption">
+              <h4 class=""></h4>
+            </div>
+          </div><!-- END: .video -->
+
+          <div class="video">
+            <img src="/images/video-hollywood-highland.jpg" class="" title="">
+            <div class="caption">
+              <h4 class=""></h4>
+            </div>
+          </div><!-- END: .video -->
+
+          <div class="video">
+            <img src="/images/video-lake-wissota.jpg" class="" title="">
+            <div class="caption">
+              <h4 class=""></h4>
+            </div>
+          </div><!-- END: .video -->
+
+          <div class="video">
+            <img src="/images/video-bellagio.jpg" class="" title="">
+            <div class="caption">
+              <h4 class=""></h4>
+            </div>
+          </div><!-- END: .video -->
+
+          <div class="video">
+            <img src="/images/video-atlantic-coast.jpg" class="" title="">
+            <div class="caption">
+              <h4 class=""></h4>
+            </div>
+          </div><!-- END: .video -->
+        </div><!-- END: .popular-vids -->
+      </div>
+
+      <div class="sidebar span-3 last">
+        <div class="newsletter">
+          <h3 class="header"></h3>
+          <form action="#!FIXME" method="POST" class="newsletter-form">
+            <label for="newsletter-email" class="sr-only">Enter your email</label>
+            <input type="text" class="email" id="newsletter-email" name="newsletter-email" placeholder="user@domain.com">
+
+            <fieldset class="newsletter-options">
+              <legend>Select the newsletters you'd like to receive</legend>
+
+              <label for="destinations-getaways">Destinations &amp; Getaways</label>
+              <input type="checkbox" id="destinations-getaways" name="destinations-getaways">
+              <label for="travel-tips">Weekly Travel Tips</label>
+              <input type="checkbox" id="travel-tips" name="travel-tips">
+            </fieldset>
+
+            <input type="submit" value="Sign Up">
+
+          </form>
+          <div class="footer">
+            <a href="#!FIXME" class="">Privacy Policy</a>
+            <a href="#!FIXME" class="">Terms of Use</a>
+          </div><!-- END: footer -->
+        </div><!-- END: ..newsletter -->
+
+        <div class="contests">
+          <h3 class="header">Current Contests</h3>
+          <div class="contest">
+            <p class="contest-details">Win an all inclusive trip to visit the famous Yeti Shrine deep in the heart of Asia</p>
+          </div>
+          <div class="contest">
+            <p class="contest-details">Win a mystical trip to Bath that includes a guided tour of Stonehenge</p>
+          </div>
+        </div><!-- END: ..contests -->
+
+        <div class="twitter-feed">
+          <a class="twitter-timeline"  href="https://twitter.com/CrispinMulberry" data-widget-id="526934473674203137">Tweets by @CrispinMulberry</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div><!-- END: ..twitter-feed -->
+      </div><!-- END: .sidebar -->
+    </div><!-- END: .section -->
+
+    <div class="footer">
+      <div class="legal">
+        <ul class="site-links">
+          <li class="site-link"><a href="#!FIXME">Privacy Policy</a></li>
+          <li class="site-link"><a href="#!FIXME">Terms of Use</a></li>
+          <li class="site-link"><a href="#!FIXME">Site Map</a></li>
+          <li class="site-link"><a href="#!FIXME">Contact Us</a></li>
+        </ul>
+        <p class="copyright">&#169; Crispin &amp; Mulberry</p>
+        <p class="address">1640 Riverside Drive, Hill Valley, California, 95420</p>
+      </div>
+      <div class="social-links">
+        <ul>
+          <li class="social-link"><a href="#!FIXME">Facebook</a></li>
+          <li class="social-link"><a href="#!FIXME">Flickr</a></li>
+          <li class="social-link"><a href="#!FIXME">Twitter</a></li>
+          <li class="social-link"><a href="#!FIXME">Vimeo</a></li>
+          <li class="social-link"><a href="#!FIXME">RSS</a></li>
+        </ul>
+      </div>
+    </div><!-- END: .footer -->
+
+    <!-- </div>END: .main-content -->
 
   </div><!-- END: .container -->
 </body>

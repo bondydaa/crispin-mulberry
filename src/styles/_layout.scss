@@ -1,0 +1,61 @@
+.section {
+  @extend %clearfix;
+  width: 100%;
+  max-width: 1000px;
+  padding-top: 20px;
+  background: #fff;
+}
+// use placeholder style to keep bloat down
+%col {
+  float: left;
+  margin-left: 20px;
+
+  &.last {
+    margin-right: 20px;
+  }
+}
+
+.span-1 {
+  @extend %col;
+  width: 78px;
+}
+.span-2 {
+  @extend %col;
+  width: 176px;
+}
+.span-3 {
+  @extend %col;
+  width: 274px;
+}
+.span-4 {
+  @extend %col;
+  width: 372px;
+}
+.span-5 {
+  @extend %col;
+  width: 470px;
+}
+.span-6 {
+  @extend %col;
+  width: 568px;
+}
+.span-7 {
+  @extend %col;
+  width: 666px;
+}
+.span-8 {
+  @extend %col;
+  width: 764px;
+}
+.span-9 {
+  @extend %col;
+  width: 862px;
+}
+.span-10 {
+  @extend %col;
+  width: 960px;
+}
+
+.sidebar {
+  float: right;
+}
