@@ -1,0 +1,66 @@
+.icon-articles,
+.icon-categories,
+.icon-contests,
+.icon-envelope,
+.icon-facebook,
+.icon-flickr,
+.icon-rss,
+.icon-twitter,
+.icon-video,
+.icon-vimeo {
+  background: url(/images/icon-sprite.png) no-repeat;
+}
+
+.icon-facebook,
+.icon-flickr,
+.icon-rss,
+.icon-twitter,
+.icon-vimeo {
+  width: 26px;
+  height: 26px;
+}
+
+.icon-facebook {
+  background-position: 0 -158px ;
+}
+.icon-flickr {
+  background-position: 0 -116px ;
+}
+.icon-rss {
+  background-position: 0 -75px ;
+}
+.icon-twitter {
+  background-position: 0 -39px ;
+}
+.icon-vimeo {
+  background-position: 0 0;
+}
+
+.icon-articles {
+  background-position: 0 -258px ;
+  width: 15px;
+  height: 16px;
+}
+
+.icon-categories {
+  background-position: 0 -229px ;
+  width: 15px;
+  height: 12px;
+}
+
+.icon-contests {
+  background-position: 0 -332px ;
+  width: 12px;
+  height: 11px;
+}
+
+.icon-envelope {
+  background-position: 0 -300px ;
+  width: 12px;
+  height: 11px;
+}
+.icon-video {
+  background-position: 0 -203px ;
+  width: 16px;
+  height: 12px;
+}
