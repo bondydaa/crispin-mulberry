@@ -25,13 +25,14 @@
         <form action="#!FIXME" method="GET" classs="search-form">
           <label for="global-search" class="sr-only">Search</label>
           <input type="text" class="search-box" id="global-search" name="global-search" placeholder="Search">
+          <i class="icon-search" aria-hidden="true"></i>
         </form>
 
         <div class="account-links">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#!IFIXME" class="account-link">My Account</a></li>
-            <li class="nav-item"><a href="#!IFIXME" class="account-link">My Subscriptions</a></li>
-            <li class="nav-item last"><a href="#!IFIXME" class="account-link">My Articles</a></li>
+            <li class="nav-item"><a href="#!IFIXME" class="link account">My Account</a></li>
+            <li class="nav-item"><a href="#!IFIXME" class="link account">My Subscriptions</a></li>
+            <li class="nav-item last"><a href="#!IFIXME" class="link account">My Articles</a></li>
           </ul>
         </div>
       </div>
@@ -40,12 +41,12 @@
     <!-- <div class="main-content"> -->
     <div class="page-nav">
       <ul class="nav-list">
-        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Destinations</a></li>
-        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Getaways</a></li>
-        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Travel Tips</a></li>
-        <li class="nav-item active"><a href="#!IFIXME" class="page-nav-link">News &amp; Features</a></li>
-        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Contents</a></li>
-        <li class="nav-item"><a href="#!IFIXME" class="page-nav-link">Contact Us</a></li>
+        <li class="page-nav-item"><a href="#!IFIXME" class="page-nav-link">Destinations</a></li>
+        <li class="page-nav-item"><a href="#!IFIXME" class="page-nav-link">Getaways</a></li>
+        <li class="page-nav-item"><a href="#!IFIXME" class="page-nav-link">Travel Tips</a></li>
+        <li class="page-nav-item active"><a href="#!IFIXME" class="page-nav-link">News &amp; Features</a></li>
+        <li class="page-nav-item"><a href="#!IFIXME" class="page-nav-link">Contents</a></li>
+        <li class="page-nav-item last"><a href="#!IFIXME" class="page-nav-link">Contact Us</a></li>
       </ul>
     </div><!-- END: .nav -->
 
@@ -53,20 +54,20 @@
       <div class="main span-7">
         <div class="marquee">
           <div class="marquee-main-img">
-            <img src="/images/slide-uss-torsk.jpg" class="main-img active" title="USS Torsk at Baltimore's Martime Museum">
-            <img src="/images/slide-venetian.jpg" class="main-img" title="Enjoy the best gondola ride on this side of the Atlantic Ocean">
-            <img src="/images/slide-london.jpg" class="main-img" title="Enjoy the pubs along the river Thames & get spectacular view from the London Eye">
-            <img src="/images/slide-mount-rushmore.jpg" class="main-img" title="Marvel at the majestic beauty of the Black Hills and come face to face with American history">
-            <div class="marquee caption">
+            <img src="/images/slide-uss-torsk.jpg" class="main-img active" title="USS Torsk at Baltimore's Martime Museum" data-headline="Downtown Baltimore" data-details="Check out the USS Torsk at Baltimore's Historic Maritime Museum.">
+            <img src="/images/slide-venetian.jpg" class="main-img" title="Enjoy the best gondola ride on this side of the Atlantic Ocean" data-headline="Exploring the Venetian" data-details="Enjoy the best gondola ride on this side of the Atlantic Ocean.">
+            <img src="/images/slide-london.jpg" class="main-img" title="Enjoy the pubs along the river Thames & get spectacular view from the London Eye" data-headline="London Afer Dark" data-details="Enjoy the pubs along the river Thames & get spectacular view from the London Eye.">
+            <img src="/images/slide-mount-rushmore.jpg" class="main-img" title="Marvel at the majestic beauty of the Black Hills and come face to face with American history" data-headline="Mount Rushmore" data-details="Marvel at the majestic beauty of the Black Hills and come face to face with American history.">
+            <div class="caption marquee">
               <h1 class="marquee-headline">Downtown Baltimore</h1>
               <p class="marquee-details">Check out the USS Torsk at Baltimore's historic Maritime Museum.</p>
             </div>
           </div>
           <div class="marquee-thumbnails">
-            <div class="thumbnail"><img src="/images/thumb-uss-torsk.jpg" class="marquee-thumb active"></div>
-            <div class="thumbnail"><img src="/images/thumb-venetian.jpg" class="marquee-thumb"></div>
-            <div class="thumbnail"><img src="/images/thumb-london.jpg" class="marquee-thumb"></div>
-            <div class="thumbnail"><img src="/images/thumb-mount-rushmore.jpg" class="marquee-thumb"></div>
+            <div class="marquee-thumb active"><img src="/images/thumb-uss-torsk.jpg" class="thumbnail"></div>
+            <div class="marquee-thumb"><img src="/images/thumb-venetian.jpg" class="thumbnail"></div>
+            <div class="marquee-thumb"><img src="/images/thumb-london.jpg" class="thumbnail"></div>
+            <div class="marquee-thumb"><img src="/images/thumb-mount-rushmore.jpg" class="thumbnail"></div>
           </div>
         </div><!-- END: .marquee -->
       </div>
@@ -84,10 +85,10 @@
 
     <div class="section">
       <div class="main span-7">
-        <div class="categories span-2">
-          <h3 class="header">Browse Categories</h3>
+        <div class="categories span-2 no-gutter">
+          <h3 class="header overhang"><i class="icon-categories" aria-hidden="true"></i>Browse Categories<i class="arrow-blue-left" aria-hidden="true"></i></h3>
           <dl class="category-list">
-            <dt class="category-header">Popular Destinations</dt>
+            <dt class="category-header">Popular Destinations<i class="arrow-black-down"></i></dt>
             <dd class="category destination"><a href="#!FIXME">United States</a></dd>
             <dd class="category destination"><a href="#!FIXME">Europe</a></dd>
             <dd class="category destination"><a href="#!FIXME">Latin America</a></dd>
@@ -95,7 +96,7 @@
             <dd class="category destination"><a href="#!FIXME">Caribbean</a></dd>
             <dd class="category destination"><a href="#!FIXME">Australia</a></dd>
             <dd class="category destination"><a href="#!FIXME">All Destinations</a></dd>
-            <dt class="category-header">Getaways</dt>
+            <dt class="category-header">Getaways<i class="arrow-black-down"></i></dt>
             <dd class="category getaway"><a href="#!FIXME">Adventure Vacations</a></dd>
             <dd class="category getaway"><a href="#!FIXME">Beach Vacations</a></dd>
             <dd class="category getaway"><a href="#!FIXME">Cruise Vacations</a></dd>
@@ -109,126 +110,152 @@
         </div><!-- END: .categories -->
 
         <div class="recent-articles span-5">
-          <h3 class="header">Recent Articles</h3>
-          <div class="post">
-            <img src="/images/article-disney-world.jpg" class="post-thumbnail">
-            <h4 class="post-header">Don’t Miss the Parades at DisneyWorld</h4>
-            <p class="post-details">The parades at Disney World are a one of a kind celebration full of all your favorite Disney characters and music. The entertainment never stops as parades are scheduled throughout the entire day.</p>
-          </div><!-- END: .post -->
+          <h3 class="header"><i class="icon-articles"></i>Recent Articles</h3>
+          <div class="row">
+            <div class="post">
+              <a href="#!FIXME"><img src="/images/article-disney-world.jpg" class="post-thumbnail"></a>
+              <div class="post-content">
+                <a href="#!FIXME"><h4 class="post-header">Don’t Miss the Parades at DisneyWorld</h4></a>
+                <a href="#!FIXME"><p class="post-details">The parades at Disney World are a one of a kind celebration full of all your favorite Disney characters and music. The entertainment never stops as parades are scheduled throughout the entire day.</p></a>
+              </div>
+            </div><!-- END: .post -->
+          </div><!-- END: .row -->
 
-          <div class="post">
-            <img src="/images/article-las-vegas.jpg" class="post-thumbnail">
-            <h4 class="post-header">Get You Kicks in Downtown Las Vegas</h4>
-            <p class="post-details">Get off the strip and check out what Old Vegas has to offer. From shark infested water slides to the nightly Fremont Street Experience it’s sure to please adventurers of all ages.</p>
-          </div><!-- END: .post -->
+          <div class="row">
+            <div class="post">
+              <a href="#!FIXME"><img src="/images/article-las-vegas.jpg" class="post-thumbnail"></a>
+              <div class="post-content">
+                <a href="#!FIXME"><h4 class="post-header">Get You Kicks in Downtown Las Vegas</h4></a>
+                <a href="#!FIXME"><p class="post-details">Get off the strip and check out what Old Vegas has to offer. From shark infested water slides to the nightly Fremont Street Experience it’s sure to please adventurers of all ages.</p></a>
+              </div>
+            </div><!-- END: .post -->
+          </div><!-- END: .row -->
 
-          <div class="post">
-            <img src="/images/article-chicago.jpg" class="post-thumbnail">
-            <h4 class="post-header">Don’t Miss Deep Dish in Chicago</h4>
-            <p class="post-details">Deep dish pizza is as synonymous with Chicago as Thin Crust is to New York. Any way you slice it, any trip to the windy city is incomplete without an italian flavor explosion in your mouth.</p>
-          </div><!-- END: .post -->
+          <div class="row last">
+            <div class="post">
+              <a href="#!FIXME"><img src="/images/article-chicago.jpg" class="post-thumbnail"></a>
+              <div class="post-content">
+                <a href="#!FIXME"><h4 class="post-header">Don’t Miss Deep Dish in Chicago</h4></a>
+                <a href="#!FIXME"><p class="post-details">Deep dish pizza is as synonymous with Chicago as Thin Crust is to New York. Any way you slice it, any trip to the windy city is incomplete without an italian flavor explosion in your mouth.</p></a>
+              </div>
+            </div><!-- END: .post -->
+          </div><!-- END: .row -->
         </div><!-- END: .recent-articles -->
 
-        <div class="popular-vids span-7">
-          <h3 class="header">Popular Videos</h3>
-          <div class="video">
-            <video poster="/images/video-team-mongoose.jpg"></video>
-            <!-- <img src="" class="" title=""> -->
-            <div class="caption">
-              <h4 class="">Team Mongoose</h4>
-            </div>
-          </div><!-- END: .video -->
+        <div class="popular-videos span-7 no-gutter">
+          <h3 class="header overhang"><i class="icon-video"></i>Popular Videos<i class="arrow-blue-left" aria-hidden="true"></i></h3>
+          <div class="row first">
+            <div class="video-container">
+              <video class="video" poster="/images/video-team-mongoose.jpg"></video>
+              <div class="caption video">
+                <h4 class="video-title">Team Mongoose</h4>
+              </div>
+            </div><!-- END: .video -->
 
-          <div class="video">
-            <video poster="/images/video-st-pauls.jpg"></video>
-            <div class="caption">
-              <h4 class="">St Paul’s Cathedral</h4>
-            </div>
-          </div><!-- END: .video -->
+            <div class="video-container">
+              <video class="video" poster="/images/video-st-pauls.jpg"></video>
+              <div class="caption video">
+                <h4 class="video-title">St Paul’s Cathedral</h4>
+              </div>
+            </div><!-- END: .video -->
 
-          <div class="video">
-            <video poster="/images/video-hollywood-highland.jpg"></video>
-            <div class="caption">
-              <h4 class="">Hollywood and Highland</h4>
-            </div>
-          </div><!-- END: .video -->
+            <div class="video-container">
+              <video class="video" poster="/images/video-hollywood-highland.jpg"></video>
+              <div class="caption video">
+                <h4 class="video-title">Hollywood and Highland</h4>
+              </div>
+            </div><!-- END: .video -->
+          </div><!-- END: .row -->
 
-          <div class="video">
-            <video poster="/images/video-lake-wissota.jpg"></video>
-            <div class="caption">
-              <h4 class="">Lake Wissota</h4>
-            </div>
-          </div><!-- END: .video -->
+          <div class="row">
+            <div class="video-container">
+              <video class="video" poster="/images/video-lake-wissota.jpg"></video>
+              <div class="caption video">
+                <h4 class="video-title">Lake Wissota</h4>
+              </div>
+            </div><!-- END: .video -->
 
-          <div class="video">
-            <video poster="/images/video-bellagio.jpg"></video>
-            <div class="caption">
-              <h4 class="">The Bellagio Fountains</h4>
-            </div>
-          </div><!-- END: .video -->
+            <div class="video-container">
+              <video class="video" poster="/images/video-bellagio.jpg"></video>
+              <div class="caption video">
+                <h4 class="video-title">The Bellagio Fountains</h4>
+              </div>
+            </div><!-- END: .video -->
 
-          <div class="video">
-            <video poster="/images/video-atlantic-coast.jpg"></video>
-            <div class="caption">
-              <h4 class="">The Atlantic Coast</h4>
-            </div>
-          </div><!-- END: .video -->
+            <div class="video-container">
+              <video class="video" poster="/images/video-atlantic-coast.jpg"></video>
+              <div class="caption video">
+                <h4 class="video-title">The Atlantic Coast</h4>
+              </div>
+            </div><!-- END: .video -->
+          </div><!-- END: .row -->
         </div><!-- END: .popular-vids -->
-      </div>
+      </div><!-- END: .main -->
 
       <div class="sidebar span-3 last">
         <div class="newsletter">
-          <h3 class="header"></h3>
+          <h3 class="header"><i class="icon-envelope"></i>Sign up for our newsletter</h3>
           <form action="#!FIXME" method="POST" class="newsletter-form">
             <label for="newsletter-email" class="sr-only">Enter your email</label>
             <input type="text" class="email" id="newsletter-email" name="newsletter-email" placeholder="user@domain.com">
 
-            <fieldset class="newsletter-options">
-              <legend>Select the newsletters you'd like to receive</legend>
+            <div class="newsletter-options">
+              <h4 class="newsletter-options-header">Select the newsletters you'd like to receive</h4>
 
-              <label for="destinations-getaways">Destinations &amp; Getaways</label>
-              <input type="checkbox" id="destinations-getaways" name="destinations-getaways">
-              <label for="travel-tips">Weekly Travel Tips</label>
-              <input type="checkbox" id="travel-tips" name="travel-tips">
-            </fieldset>
+              <fieldset class="newsletter-option-container">
+                <legend class="sr-only">Destination and Getaways</legend>
+                <input type="checkbox" class="options-input" id="destinations-getaways" name="destinations-getaways" checked="checked">
+                <label for="destinations-getaways" class="options-label">Destinations &amp; Getaways</label>
+              </fieldset>
 
-            <input type="submit" value="Sign Up">
+              <fieldset class="newsletter-option-container">
+                <legend class="sr-only">Weekly Travel Trips</legend>
+                <input type="checkbox" class="options-input" id="travel-tips" name="travel-tips" checked="checked">
+                <label for="travel-tips" class="options-label">Weekly Travel Tips</label>
+              </fieldset>
+            </div>
+
+            <input type="submit" class="newsletter-submit-btn" value="Sign Up">
 
           </form>
-          <div class="footer">
-            <a href="#!FIXME" class="">Privacy Policy</a>
-            <a href="#!FIXME" class="">Terms of Use</a>
-          </div><!-- END: footer -->
-        </div><!-- END: ..newsletter -->
+        </div><!-- END: .newsletter -->
+        <div class="newsletter-footer">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#!FIXME" class="newsletter-footer-link">Privacy Policy</a></li>
+            <li class="nav-item last"><a href="#!FIXME" class="newsletter-footer-link">Terms of Use</a></li>
+          </ul>
+        </div><!-- END: .newsletter-footer -->
 
         <div class="contests">
-          <h3 class="header">Current Contests</h3>
+          <h3 class="header"><i class="icon-contests"></i>Current Contests</h3>
           <div class="contest">
+            <img src="/images/contest-yeti-shrine.jpg" class="contest-image">
             <p class="contest-details">Win an all inclusive trip to visit the famous Yeti Shrine deep in the heart of Asia</p>
           </div>
           <div class="contest">
+            <img src="/images/contest-stonehenge.jpg" class="contest-image">
             <p class="contest-details">Win a mystical trip to Bath that includes a guided tour of Stonehenge</p>
           </div>
-        </div><!-- END: ..contests -->
+        </div><!-- END: .contests -->
 
         <div class="twitter-feed">
-          <a class="twitter-timeline"  href="https://twitter.com/CrispinMulberry" data-widget-id="526934473674203137">Tweets by @CrispinMulberry</a>
+          <a class="twitter-timeline" href="https://twitter.com/CrispinMulberry" data-widget-id="526934473674203137">Tweets by @CrispinMulberry</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div><!-- END: ..twitter-feed -->
+        </div><!-- END: .twitter-feed -->
       </div><!-- END: .sidebar -->
     </div><!-- END: .section -->
 
     <div class="footer">
       <div class="legal">
-        <ul class="site-links">
-          <li class="site-link"><a href="#!FIXME">Privacy Policy</a></li>
-          <li class="site-link"><a href="#!FIXME">Terms of Use</a></li>
-          <li class="site-link"><a href="#!FIXME">Site Map</a></li>
-          <li class="site-link"><a href="#!FIXME">Contact Us</a></li>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#!FIXME" class="link site">Privacy Policy</a></li>
+          <li class="nav-item"><a href="#!FIXME" class="link site">Terms of Use</a></li>
+          <li class="nav-item"><a href="#!FIXME" class="link site">Site Map</a></li>
+          <li class="nav-item last"><a href="#!FIXME" class="link site">Contact Us</a></li>
         </ul>
         <p class="copyright">&#169; Crispin &amp; Mulberry</p>
         <p class="address">1640 Riverside Drive, Hill Valley, California, 95420</p>
-      </div>
+      </div><!-- END: .legal -->
       <div class="social-links">
         <ul>
           <li class="social-link icon-facebook"><a href="#!FIXME">Facebook</a></li>
@@ -237,11 +264,14 @@
           <li class="social-link icon-vimeo"><a href="#!FIXME">Vimeo</a></li>
           <li class="social-link icon-rss"><a href="#!FIXME">RSS</a></li>
         </ul>
-      </div>
+      </div><!-- END: .social-links -->
     </div><!-- END: .footer -->
 
     <!-- </div>END: .main-content -->
 
   </div><!-- END: .container -->
+
+  <script src="/js/jquery-1.11.1.min.js"></script>
+  <script src="/js/crispin-mulberry.js"></script>
 </body>
 </html>

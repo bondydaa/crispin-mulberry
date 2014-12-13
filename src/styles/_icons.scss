@@ -1,14 +1,7 @@
-.icon-articles,
-.icon-categories,
-.icon-contests,
-.icon-envelope,
-.icon-facebook,
-.icon-flickr,
-.icon-rss,
-.icon-twitter,
-.icon-video,
-.icon-vimeo {
+[class*="icon-"] {
+  display: inline-block;
   background: url(/images/icon-sprite.png) no-repeat;
+  vertical-align: middle;
 }
 
 .icon-facebook,
@@ -36,31 +29,56 @@
   background-position: 0 0;
 }
 
+.icon-categories,
+.icon-video,
 .icon-articles {
-  background-position: 0 -258px ;
   width: 15px;
   height: 16px;
 }
 
+.icon-video {
+  background-position: 0 -203px ;
+}
 .icon-categories {
   background-position: 0 -229px ;
-  width: 15px;
-  height: 12px;
 }
-
-.icon-contests {
-  background-position: 0 -332px ;
-  width: 12px;
-  height: 11px;
+.icon-articles {
+  background-position: 0 -258px ;
 }
-
 .icon-envelope {
   background-position: 0 -300px ;
   width: 12px;
   height: 11px;
 }
-.icon-video {
-  background-position: 0 -203px ;
-  width: 16px;
-  height: 12px;
+.icon-contests {
+  background-position: 0 -332px ;
+  width: 12px;
+  height: 11px;
+}
+.icon-search {
+  background-position: 0 -349px;
+  width: 14px;
+  height: 13px;
+}
+
+.arrow-blue-up,
+.arrow-black-down,
+.arrow-blue-left {
+  display: inline-block;
+  vertical-align: middle;
+}
+.arrow-black-down {
+  width: 11px;
+  height: 9px;
+  background: url(/images/arrow-black-down.png) 0 0 no-repeat;
+}
+.arrow-blue-left {
+  width: 13px;
+  height: 7px;
+  background: url(/images/arrow-blue-left.png) 0 0 no-repeat;
+}
+.arrow-blue-up {
+  width: 12;
+  height: 10;
+  background: url(/images/arrow-blue-up.png) 0 0 no-repeat;
 }

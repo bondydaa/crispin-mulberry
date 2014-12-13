@@ -7,11 +7,15 @@
 }
 // use placeholder style to keep bloat down
 %col {
+  position: relative;
   float: left;
   margin-left: 20px;
 
   &.last {
     margin-right: 20px;
+  }
+  &.no-gutter {
+    margin-left: 0;
   }
 }
 
@@ -58,4 +62,13 @@
 
 .sidebar {
   float: right;
+}
+
+.row {
+  @extend %clearfix;
+  margin-bottom: 20px;
+
+  &.last {
+    margin-bottom: 0;
+  }
 }

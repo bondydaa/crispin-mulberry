@@ -15,6 +15,20 @@ html {
   }
 }
 
+a {
+  color: $font-dark;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
