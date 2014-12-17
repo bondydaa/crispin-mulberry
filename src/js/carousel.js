@@ -1,6 +1,3 @@
-/* Build 2014-12-16 */
-(function() {"use-strict";
-
 if(typeof(crispin_mulberry) === 'undefined') {
   var crispin_mulberry = window.crispin_mulberry || {};
 }
@@ -69,5 +66,3 @@ $(document).ready(function(){
     $('body').addClass('no-placeholder');
   }
 });
-
-})();

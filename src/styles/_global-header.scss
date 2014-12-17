@@ -1,0 +1,25 @@
+.backdrop {
+  background: $backdrop-color url(/images/city-scape.jpg) center top fixed no-repeat;
+}
+
+.global-header {
+  @extend %clearfix;
+  margin: 15px 0;
+
+  .logo {
+    float: left;
+  }
+}
+
+.search-account {
+  position: relative;
+  float: right;
+  margin-top: 15px;
+  width: 260px;
+
+  .icon-search {
+    position: absolute;
+    top: 6px;
+    right: 4px;
+  }
+}

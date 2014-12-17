@@ -1,0 +1,52 @@
+.newsletter-options {
+  @extend %clearfix;
+  margin-bottom: 10px;
+  padding: 10px 0 0px 10px;
+  background: #cac9c9;
+}
+.newsletter-option-container {
+  margin-bottom: 10px;
+}
+.newsletter-options-header {
+  margin-bottom: 13px;
+  font-style: italic;
+}
+.options-label {
+  vertical-align: middle;
+  font-weight: bold;
+}
+.options-input {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.newsletter-submit-btn {
+  float: right;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 25px;
+  border: none;
+  -moz-appearance: none;
+  color: #fff;
+  background: $section-accent;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.newsletter-footer {
+  @extend %clearfix;
+  padding: 5px 0;
+  border-top: 1px solid #969696;
+  @include font-size(12);
+  background: #cac9c9;
+
+  .nav-list {
+    margin: 0 auto;
+    width: 170px;
+  }
+  .nav-item {
+    border-color: #282b2e;
+  }
+}

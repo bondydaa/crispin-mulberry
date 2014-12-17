@@ -1,0 +1,127 @@
+[data-slide] {
+  display: none;
+}
+[data-caption-headline],
+[data-caption-details] {
+  display: none;
+}
+[data-active-slide="0"] {
+  [data-slide="0"] {
+    display: inline;
+
+    .main-img {
+      display: block;
+    }
+  }
+  [data-caption-headline="0"],
+  [data-caption-details="0"] {
+    display: block;
+  }
+  [data-slide-thumb="0"]:before {
+    content: '';
+  }
+}
+[data-active-slide="1"] {
+  [data-slide="1"] {
+    display: inline;
+
+    .main-img {
+      display: block;
+    }
+  }
+  [data-caption-headline="1"],
+  [data-caption-details="1"] {
+    display: block;
+  }
+  [data-slide-thumb="1"]:before {
+    content: '';
+  }
+}
+[data-active-slide="2"] {
+  [data-slide="2"] {
+    display: inline;
+
+    .main-img {
+      display: block;
+    }
+  }
+  [data-caption-headline="2"],
+  [data-caption-details="2"] {
+    display: block;
+  }
+  [data-slide-thumb="2"]:before {
+    content: '';
+  }
+}
+[data-active-slide="3"] {
+  [data-slide="3"] {
+    display: inline;
+
+    .main-img {
+      display: block;
+    }
+  }
+  [data-caption-headline="3"],
+  [data-caption-details="3"] {
+    display: block;
+  }
+  [data-slide-thumb="3"]:before {
+    content: '';
+  }
+}
+.carousel-main-img {
+  position: relative;
+  margin-bottom: 10px;
+}
+.carousel-headline {
+  margin-bottom: 5px;
+  @include font-size(24);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.carousel-details {
+  @include font-size(14);
+}
+.carousel-thumbnails {
+  position: relative;
+  .arrow-blue-up {
+    position: absolute;
+    top: -9px;
+
+    [data-active-slide="0"] & {
+      left: 73px;
+    }
+    [data-active-slide="1"] & {
+      left: 243px;
+    }
+    [data-active-slide="2"] & {
+      left: 410px;
+    }
+    [data-active-slide="3"] & {
+      left: 580px;
+    }
+  }
+}
+.carousel-thumb {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  width: 159px;
+  height: 79px;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    @include box-shadow(inset 0px 0px 0px 3px $section-accent);
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

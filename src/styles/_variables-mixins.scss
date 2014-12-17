@@ -13,14 +13,14 @@ $section-accent: #0084d9;
 $base-font-family: Helvetica, sans-serif;
 $base-font-size: 16;
 
-
+// @extend %[placeholder-name]; to use
 // Placeholders
 %clearfix {
   zoom: 1;
-  // &:before {
-  //   content: '';
-  //   display: table;
-  // }
+  &:before {
+    content: '';
+    display: table;
+  }
   &:after {
     content: '';
     display: table;

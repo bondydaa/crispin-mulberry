@@ -1,0 +1,17 @@
+.category-header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @include font-size(14);
+  font-weight: bold;
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .arrow-black-down {
+    margin-left: 6px;
+  }
+}
+.category {
+  margin-bottom: 5px;
+  @include font-size(14);
+}
