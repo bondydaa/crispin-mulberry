@@ -119,4 +119,8 @@
 
 .twitter-feed {
   margin-top: 30px;
+
+  .no-placeholder & {
+    margin-top: 5px;
+  }
 }
