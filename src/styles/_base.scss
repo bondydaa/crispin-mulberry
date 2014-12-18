@@ -1,0 +1,53 @@
+// define border-box on html, let children inherit box-sizing in case a component is defined with another type of box-sizing
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: $base-font-family;
+  font-size: $base-font-size+px; // All modern browser default, setting to ensure old browsers are the same
+
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+}
+
+a {
+  color: $font-dark;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+// over-write hidden label for dumb browsers for context on inputs without icons
+.no-placeholder .placeholder-replacement {
+  position: static;
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0 0 5px 0;
+  overflow: visible;
+  clip: auto;
+}
+

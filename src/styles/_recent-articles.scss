@@ -1,0 +1,25 @@
+.recent-articles {
+  .row {
+    max-height: 105px;
+  }
+}
+.post {
+  @extend %clearfix;
+  @include font-size(14);
+}
+.post-thumbnail {
+  float: left;
+}
+.post-content {
+  float: left;
+  margin-left: 15px;
+  padding-top: 3px;
+  width: 300px;
+}
+.post-header {
+  margin-bottom: 9px;
+  font-weight: bold;
+}
+.post-details {
+  line-height: 1.2;
+}

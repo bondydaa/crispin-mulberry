@@ -1,0 +1,63 @@
+.global-nav {
+  @extend %clearfix;
+  width: 1000px;
+
+  .global-nav-item {
+    position: relative;
+    top: 4px;
+    float: left;
+    padding-top: 12px;
+    height: 40px;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    @include background(linear-gradient(#fff, #bdbdbd));
+    text-align: center;
+
+    &:hover {
+      background: #bec0c3;
+      cursor: pointer;
+    }
+    &.selected {
+      top: 0;
+      padding-top: 16px;
+      height: 44px;
+      border: 1px solid #c2c2c2;
+      border-bottom: 1px solid #fff;
+      background: #fff;
+
+      .global-nav-link {
+        opacity: 1;
+      }
+    }
+  }
+  .destinations {
+    width: 175px;
+  }
+  .getaways {
+    width: 147px;
+  }
+  .travel-tips {
+    width: 163px;
+  }
+  .news-features {
+    width: 205px;
+  }
+  .contents {
+    width: 148px;
+  }
+  .contact-us {
+    width: 162px;
+  }
+  .global-nav-link {
+    @include font-size(12);
+    letter-spacing: 0.07em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $font-dark;
+    opacity: .8;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

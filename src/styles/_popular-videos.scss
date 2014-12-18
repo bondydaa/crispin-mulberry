@@ -1,0 +1,16 @@
+.popular-videos {
+  margin-top: 20px;
+}
+.video-container {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.video-title {
+  @include font-size(13);
+  font-weight: bold;
+}

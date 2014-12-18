@@ -1,0 +1,39 @@
+// Global Variables, Mixins, and Placeholders
+
+// ###### Variables ######
+
+// Colors
+$backdrop-color: #447fda;
+$font-light: #fff;
+$font-dark: #282b2e;
+$section-accent: #0084d9;
+
+
+// Fonts
+$base-font-family: Helvetica, sans-serif;
+$base-font-size: 16;
+
+// @extend %[placeholder-name]; to use
+// Placeholders
+%clearfix {
+  zoom: 1;
+  &:before {
+    content: '';
+    display: table;
+  }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// ###### Mixins ######
+
+// REM Fallback Mixin - based on http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+// I'm not totally sold on setting base font size to 10px, it makes math easier but that's why we have mixins right? Leaving HTML at 16px root font.
+
+@mixin font-size($sizeValue: $base-font-size) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / $base-font-size) + rem;
+}

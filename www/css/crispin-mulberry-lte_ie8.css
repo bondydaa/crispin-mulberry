@@ -1,0 +1,46 @@
+.backdrop {
+  background-attachment: fixed;
+}
+
+.global-nav .global-nav-item {
+  background: url(/images/gradient-page-nav.png) 0 0 repeat-x;
+}
+.global-nav .global-nav-item.selected .global-nav-link {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.global-nav .global-nav-link {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.caption {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.carousel-thumbnails .arrow-blue-up {
+  width: 159px;
+  height: 88px;
+  background: url(/images/border-marquee-thumbs.png) 0 0 no-repeat;
+}
+[data-active-slide="0"] .carousel-thumbnails .arrow-blue-up {
+  left: 0;
+}
+[data-active-slide="1"] .carousel-thumbnails .arrow-blue-up {
+  left: 169px;
+}
+[data-active-slide="2"] .carousel-thumbnails .arrow-blue-up {
+  left: 338px;
+}
+[data-active-slide="3"] .carousel-thumbnails .arrow-blue-up {
+  left: 507px;
+}
+
+.video-container {
+  display: none;
+}
+
+.no-support-message {
+  margin-bottom: 10px;
+}
+.no-support-message a {
+  color: #0084d9;
+}

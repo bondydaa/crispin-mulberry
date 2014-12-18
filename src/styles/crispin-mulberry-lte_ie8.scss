@@ -1,0 +1,55 @@
+@import "variables-mixins";
+
+.backdrop {
+  background-attachment: fixed;
+}
+.global-nav {
+  .global-nav-item {
+    background: url(/images/gradient-page-nav.png) 0 0 repeat-x;
+
+    &.selected {
+      .global-nav-link {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      }
+    }
+  }
+  .global-nav-link {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  }
+}
+
+.caption {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.carousel-thumbnails {
+  .arrow-blue-up {
+    width: 159px;
+    height: 88px;
+    background: url(/images/border-marquee-thumbs.png) 0 0 no-repeat;
+
+    [data-active-slide="0"] & {
+      left: 0;
+    }
+    [data-active-slide="1"] & {
+      left: 169px;
+    }
+    [data-active-slide="2"] & {
+      left: 338px;
+    }
+    [data-active-slide="3"] & {
+      left: 507px;
+    }
+  }
+}
+
+.video-container {
+  display: none;
+}
+.no-support-message {
+  margin-bottom: 10px;
+
+  a {
+    color: $section-accent;
+  }
+}

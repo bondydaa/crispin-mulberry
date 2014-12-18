@@ -1,0 +1,35 @@
+[class*="icon-"],
+.arrow-blue-up,
+.arrow-black-down,
+.arrow-blue-left {
+  display: inline;
+  zoom: 1;
+}
+
+.text-field.search-box {
+  width: 250px;
+}
+.text-field.email {
+  width: 245px;
+}
+
+.global-nav .global-nav-item {
+  height: 26px;
+}
+.global-nav .global-nav-item.selected {
+  padding-bottom: 2px;
+  height: 24px;
+}
+.global-nav .global-nav-item.selected .global-nav-link {
+  filter: alpha(opacity=100);
+}
+.global-nav .global-nav-item .global-nav-link {
+  filter: alpha(opacity=80);
+}
+.global-nav .contact-us {
+  width: 160px;
+}
+
+.caption {
+  filter: alpha(opacity=80);
+}

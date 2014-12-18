@@ -1,0 +1,40 @@
+@import "variables-mixins";
+
+[class*="icon-"],
+.arrow-blue-up,
+.arrow-black-down,
+.arrow-blue-left {
+  display: inline;
+  zoom: 1;
+}
+.text-field {
+  &.search-box {
+    width: 250px;
+  }
+  &.email {
+   width: 245px;
+  }
+}
+.global-nav {
+  .global-nav-item {
+    height: 26px;
+    &.selected {
+      padding-bottom: 2px;
+      height: 24px;
+
+      .global-nav-link {
+        filter: alpha(opacity=100);
+      }
+    }
+
+    .global-nav-link {
+      filter: alpha(opacity=80);
+    }
+  }
+  .contact-us {
+    width: 160px;
+  }
+}
+.caption {
+  filter: alpha(opacity=80);
+}
