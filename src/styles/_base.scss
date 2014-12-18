@@ -3,7 +3,6 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 100%;
   font-family: $base-font-family;
   font-size: $base-font-size+px; // All modern browser default, setting to ensure old browsers are the same
 
@@ -14,11 +13,6 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
   }
-}
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
 }
 
 a {
@@ -57,19 +51,3 @@ input {
   clip: auto;
 }
 
-.container {
-  @extend %clearfix;
-  display: table;
-  width: 100%;
-  max-width: 1000px;
-  height: 100%;
-  margin: 0 auto;
-  overflow: visible;
-}
-.container-wrap {
-  height: 100%;
-}
-.container-wrap,
-.footer {
-  display: table-row;
-}

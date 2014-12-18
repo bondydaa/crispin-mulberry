@@ -1,5 +1,8 @@
 @import "variables-mixins";
 
+.backdrop {
+  background-attachment: fixed;
+}
 .global-nav {
   .global-nav-item {
     background: url(/images/gradient-page-nav.png) 0 0 repeat-x;

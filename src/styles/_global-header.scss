@@ -1,5 +1,6 @@
 .backdrop {
-  background: $backdrop-color url(/images/city-scape.jpg) center top fixed no-repeat;
+  background: $backdrop-color url(/images/city-scape.jpg) center top no-repeat;
+  background-size: cover;
 }
 
 .global-header {
