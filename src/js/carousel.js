@@ -11,7 +11,6 @@ crispin_mulberry.carousel = {
     this.captionHeadlines = $('[data-caption-headline]');
     this.captionDetails = $('[data-caption-details]');
     this.delayTime = 5000;
-    this.noPlaceholderSupport = $('body').hasClass('no-placeholder');
 
     this.addListeners.call(this);
     this.setTimer.call(this);
@@ -29,9 +28,6 @@ crispin_mulberry.carousel = {
     }
     this.toggleAriaHelpers.call(this);
     this.setTimer.call(this);
-    if (this.noPlaceholderSupport) {
-      this.container.addClass('z').removeClass('z');
-    }
   },
   toggleAriaHelpers: function(){
     for(var x = 0; x <= this.numSlides; x++){
@@ -46,16 +42,6 @@ crispin_mulberry.carousel = {
       }
     }
   },
-  pickSlide: function(e){
-    var targetSlide = $(e.target).closest('.carousel-thumb').data('slide-thumb');
-    this.activeSlide = targetSlide;
-    this.toggleAriaHelpers.call(this);
-    this.container.attr('data-active-slide', targetSlide);
-
-    if (this.noPlaceholderSupport) {
-      this.container.addClass('z').removeClass('z');
-    }
-  },
   addListeners: function(){
     this.container.on('mouseenter', function(e){
       clearTimeout(crispin_mulberry.carousel.carouselTimer);
@@ -63,15 +49,20 @@ crispin_mulberry.carousel = {
 
     this.container.on('mouseleave', $.proxy(this.setTimer, this));
 
-    $('.carousel-thumbnails').on('click', '.carousel-thumb', $.proxy(this.pickSlide, this));
+    $('.carousel-thumbnails').on('click', '.carousel-thumb', function(e){
+      var targetSlide = $(this).data('slide-thumb');
+      crispin_mulberry.carousel.activeSlide = targetSlide;
+      crispin_mulberry.carousel.toggleAriaHelpers.call(crispin_mulberry.carousel, targetSlide);
+      $('.carousel').attr('data-active-slide', targetSlide);
+    });
   }
 };
 
 $(document).ready(function(){
+  crispin_mulberry.carousel.init();
+
   var ph = document.createElement('input');
   if(!('placeholder' in ph)){
     $('body').addClass('no-placeholder');
   }
-
-  crispin_mulberry.carousel.init();
 });

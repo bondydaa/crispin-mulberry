@@ -409,9 +409,6 @@ input {
 .twitter-feed {
   margin-top: 30px;
 }
-.no-placeholder .twitter-feed {
-  margin-top: 5px;
-}
 
 .backdrop {
   background: #447fda url(/images/city-scape.jpg) center top no-repeat;
